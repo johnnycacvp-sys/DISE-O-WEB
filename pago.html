@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pago | AnimeWear Perú</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><h1>AnimeWear<span>Perú</span></h1></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carrito.html">Carrito 🛒 <span id="contador">0</span></a></li>
+        <li><a href="pago.html" class="activo">Pago</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="registro.html">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <h2 class="titulo-seccion">Proceso de pago</h2>
+    <form class="formulario" onsubmit="event.preventDefault(); alert('¡Pago simulado con éxito! Gracias por tu compra.');">
+      <label>Nombre completo</label>
+      <input type="text" required placeholder="Ej: Goku Son">
+
+      <label>Correo electrónico</label>
+      <input type="email" required placeholder="goku@email.com">
+
+      <label>Dirección de envío</label>
+      <input type="text" required placeholder="Av. Kame House 123, Lima">
+
+      <label>Método de pago</label>
+      <select required>
+        <option value="">Seleccione...</option>
+        <option>Tarjeta de crédito</option>
+        <option>Tarjeta de débito</option>
+        <option>Yape / Plin</option>
+        <option>Pago contra entrega</option>
+      </select>
+
+      <label>Número de tarjeta / celular</label>
+      <input type="text" required placeholder="**** **** **** 1234">
+
+      <button type="submit" class="btn">Confirmar pago</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 AnimeWear Perú | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/carrito.js"></script>
+</body>
+</html>

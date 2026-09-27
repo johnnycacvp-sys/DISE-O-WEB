@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | AnimeWear Perú</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><h1>AnimeWear<span>Perú</span></h1></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carrito.html">Carrito 🛒 <span id="contador">0</span></a></li>
+        <li><a href="pago.html">Pago</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+        <li><a href="registro.html">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <h2 class="titulo-seccion">Contáctanos</h2>
+    <form class="formulario" onsubmit="event.preventDefault(); alert('Mensaje enviado. ¡Gracias por escribirnos!');">
+      <label>Nombre</label>
+      <input type="text" required placeholder="Tu nombre">
+
+      <label>Correo</label>
+      <input type="email" required placeholder="tucorreo@email.com">
+
+      <label>Asunto</label>
+      <input type="text" required placeholder="Consulta sobre pedido">
+
+      <label>Mensaje</label>
+      <textarea rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+
+      <button type="submit" class="btn">Enviar mensaje</button>
+    </form>
+
+    <div class="info-contacto">
+      <h3>Información de contacto</h3>
+      <p>📍 Av. Anime 123, Lima – Perú</p>
+      <p>📞 +51 999 888 777</p>
+      <p>✉️ ventas@animewearperu.com</p>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 AnimeWear Perú | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/carrito.js"></script>
+</body>
+</html>

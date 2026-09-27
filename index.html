@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AnimeWear Perú | Ropa de Anime</title>
+  <link rel="stylesheet" href="css/estilos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <h1>AnimeWear<span>Perú</span></h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="activo">Inicio</a></li>
+        <li><a href="carrito.html">Carrito 🛒 <span id="contador">0</span></a></li>
+        <li><a href="pago.html">Pago</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="registro.html">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>¡Viste el poder de tus animes favoritos!</h2>
+    <p>Polos, hoodies y accesorios de Dragon Ball, Naruto, One Piece y más.</p>
+    <a href="#catalogo" class="btn">Ver catálogo</a>
+  </section>
+
+  <main id="catalogo">
+    <h2 class="titulo-seccion">Catálogo de productos</h2>
+
+    <div class="grid-productos">
+
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVhXYyZzIJgTJnCMgSMyo2gXhimwP4u_FqmV1IBhKJuQ&s=10" alt="Polo Goku">
+        <h3>Polo Goku Ultra Instinto</h3>
+        <p class="precio">S/ 59.90</p>
+        <button class="btn-agregar" data-nombre="Polo Goku Ultra Instinto" data-precio="59.90">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF7zuCeTgy6vF50R6C-j1NjQgC9WLA58-70X22DCOMdA&s=10" alt="Hoodie Vegeta">
+        <h3>Hoodie Vegeta SSJ Blue</h3>
+        <p class="precio">S/ 119.90</p>
+        <button class="btn-agregar" data-nombre="Hoodie Vegeta SSJ Blue" data-precio="119.90">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeFj6in7dAN0XIybdV695sq2U3ZTU1p4LoG1kfs6uG45heo4sCdMJx5Jg5&s=10" alt="Gorra Dragon Ball">
+        <h3>Gorra Dragón de las 7 esferas</h3>
+        <p class="precio">S/ 39.90</p>
+        <button class="btn-agregar" data-nombre="Gorra Dragón de las 7 esferas" data-precio="39.90">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_743686-MLM83794781867_042025-O.webp" alt="Polo Naruto">
+        <h3>Polo Naruto Modo Sabio</h3>
+        <p class="precio">S/ 59.90</p>
+        <button class="btn-agregar" data-nombre="Polo Naruto Modo Sabio" data-precio="59.90">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVHOioIwWUrpJCwf7JdTb7kKg1I8DamPnYSMKMmEiZdOXQd9qTRhG7RbM&s=10" alt="Hoodie Luffy">
+        <h3>Hoodie Luffy Gear 5</h3>
+        <p class="precio">S/ 129.90</p>
+        <button class="btn-agregar" data-nombre="Hoodie Luffy Gear 5" data-precio="129.90">Agregar al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvce4jPzMm7y5iTUa4RT59FAR2Wd6J6Ew35JAo4OI8-YpVPYB9rPBbxb0&s=10" alt="Polera DBZ">
+        <h3>Polera Dragon Ball Z Retro</h3>
+        <p class="precio">S/ 49.90</p>
+        <button class="btn-agregar" data-nombre="Polera Dragon Ball Z" data-precio="49.90">Agregar al carrito</button>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 AnimeWear Perú | Todos los derechos reservados</p>
+    <p>Síguenos: Facebook | Instagram | TikTok</p>
+  </footer>
+
+  <script src="js/carrito.js"></script>
+</body>
+</html>

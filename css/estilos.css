@@ -1,0 +1,314 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+}
+
+/* ===== HEADER ===== */
+header {
+  background: linear-gradient(90deg, #ff6b00, #0033a0);
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo h1 {
+  font-size: 2rem;
+}
+.logo span {
+  color: #ffcc00;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+nav a:hover, nav a.activo {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* ===== HERO ===== */
+.hero {
+  background: url('https://via.placeholder.com/1600x500/ff6b00/fff?text=Dragon+Ball+Collection') center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 6px #000;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 15px 0 25px;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+  display: inline-block;
+  background: #ffcc00;
+  color: #0033a0;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.btn:hover {
+  background: #ff6b00;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+.btn-secundario {
+  background: #0033a0;
+  color: #fff;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+/* ===== CATÁLOGO ===== */
+.titulo-seccion {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0033a0;
+  margin: 40px 0 20px;
+}
+
+.grid-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  padding: 20px 40px 60px;
+}
+
+.producto {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-6px);
+}
+
+.producto img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 8px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.producto h3 {
+  margin: 12px 0 6px;
+  color: #222;
+}
+
+.precio {
+  font-size: 1.3rem;
+  color: #ff6b00;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.btn-agregar {
+  background: #0033a0;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-agregar:hover {
+  background: #ff6b00;
+}
+
+/* ===== CARRITO ===== */
+.contenedor {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+#lista-carrito .item-carrito {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+#lista-carrito button {
+  background: #c0392b;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#total {
+  text-align: right;
+  font-size: 1.5rem;
+  color: #0033a0;
+  margin: 20px 0;
+}
+
+.acciones-carrito {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* ===== FORMULARIOS ===== */
+.formulario {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.formulario label {
+  font-weight: 600;
+  color: #0033a0;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #ff6b00;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+}
+
+.info-contacto {
+  text-align: center;
+  margin-top: 30px;
+  color: #0033a0;
+}
+
+/* ===== FOOTER ===== */
+footer {
+  background: #0033a0;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+
+  nav ul {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+
+  .titulo-seccion {
+    font-size: 2rem;
+  }
+
+  .grid-productos {
+    padding: 15px;
+  }
+
+  #lista-carrito .item-carrito {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 1.5rem;
+  }
+  nav a {
+    font-size: 0.9rem;
+    padding: 6px 8px;
+  }
+  .hero {
+    padding: 50px 15px;
+  }
+}

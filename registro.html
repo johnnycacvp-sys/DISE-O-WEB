@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro | AnimeWear Perú</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <div class="logo"><h1>AnimeWear<span>Perú</span></h1></div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="carrito.html">Carrito 🛒 <span id="contador">0</span></a></li>
+        <li><a href="pago.html">Pago</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="registro.html" class="activo">Registro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <h2 class="titulo-seccion">Crea tu cuenta</h2>
+    <form class="formulario" onsubmit="event.preventDefault(); alert('¡Registro exitoso! Bienvenido a AnimeWear Perú.');">
+      <label>Nombre completo</label>
+      <input type="text" required placeholder="Ej: Gohan Son">
+
+      <label>Correo electrónico</label>
+      <input type="email" required placeholder="gohan@email.com">
+
+      <label>Contraseña</label>
+      <input type="password" required minlength="6" placeholder="Mínimo 6 caracteres">
+
+      <label>Confirmar contraseña</label>
+      <input type="password" required minlength="6" placeholder="Repite tu contraseña">
+
+      <label>Fecha de nacimiento</label>
+      <input type="date" required>
+
+      <label class="check">
+        <input type="checkbox" required> Acepto los términos y condiciones
+      </label>
+
+      <button type="submit" class="btn">Registrarme</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 AnimeWear Perú | Todos los derechos reservados</p>
+  </footer>
+
+  <script src="js/carrito.js"></script>
+</body>
+</html>
